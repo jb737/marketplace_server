@@ -1,9 +1,13 @@
 import express from "express";
 import bodyParser from "body-parser";
-import dummyProducts from "./dummyData/products.js"
 import productsRouter from "./routers/productsRouter.js";
+import cors from "cors";
 
 const app = express();
+
+app.use(cors({
+    origin: "http://localhost:5173"
+}));
 
 app.use(bodyParser.json());
 
