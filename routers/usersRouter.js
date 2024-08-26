@@ -8,7 +8,7 @@ usersRouter.get("/:userId/products", (req, res) => {
 
     if(!userId) return res.status(404).send("User not found.");
 
-    const userProducts = DUMMY_PRODUCTS.filter(product => product.postedBy == userId);
+    const userProducts = DUMMY_PRODUCTS.filter(product => product.ownerId == userId);
 
     res.send(userProducts);
 });
