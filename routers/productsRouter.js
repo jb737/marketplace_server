@@ -1,5 +1,5 @@
 import express from "express";
-import DUMMY_PRODUCTS from "../dummyData/products.js";
+//import DUMMY_PRODUCTS from "../dummyData/products.js";
 import { PRODUCT_NOT_FOUND_MESSAGE } from "../constants/errorMessages.js";
 
 const productsRouter = express.Router();
